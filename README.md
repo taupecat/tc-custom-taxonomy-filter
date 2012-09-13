@@ -20,5 +20,6 @@ Filter your posts (including custom post types) by your custom taxonomies, just 
 
 ## Changelog
 
-= Version 1.0 =
+### Version 1.0
+
 * Initial release.

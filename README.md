@@ -1,12 +1,12 @@
 # TC Custom Taxonomy Filter
 
-A WordPress plugin to filter your posts by custom taxonomies in the dashboard.
-
 * Contributors: taupecat
 * Requires at least: 3.4
 * Tested up to: 3.4.2
 * Stable tag: 1
 * Tags: custom-taxonomy, filter
+
+A WordPress plugin to filter your posts by custom taxonomies in the dashboard.
 
 ## Description
 

@@ -3,7 +3,7 @@
 * Contributors: taupecat
 * Requires at least: 3.4
 * Tested up to: 3.4.2
-* Stable tag: 1
+* Stable tag: 1.1
 * Tags: custom-taxonomy, filter
 
 A WordPress plugin to filter your posts by custom taxonomies in the dashboard.
@@ -19,6 +19,11 @@ Filter your posts (including custom post types) by your custom taxonomies, just 
 3. There is no step 3!
 
 ## Changelog
+
+### Version 1.1
+
+* Turned off the "show_count" argument in wp_dropdown_categories. That option only counts the "publish" post status, not "private" or "drafts." While this makes sense on the front end, in the administration interface it's a bit confusing.
+* Removed the "Uncategorized" option because it wasn't working properly. Will investigate restoring it at some point in the future.
 
 ### Version 1.0
 

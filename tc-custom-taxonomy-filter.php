@@ -31,11 +31,9 @@ function tc_ctf_restrict_manage_posts() {
                 'show_option_all'   => __("Show All " . $taxonomy->labels->name ),
                 'taxonomy'          => $tax_slug,
                 'name'              => $tax_slug,
-                'show_count'        => true,
                 'hide_empty'        => false,
                 'orderby'           => 'name',
                 'order'             => 'ASC',
-                'show_option_none'  => __("Uncategorized"),
                 'selected'          => $term->term_id
             )
         );
@@ -57,7 +55,6 @@ function tc_ctf_get_filters() {
 }
 
 // Now, actually filter out the posts based on the category, er, _custom taxonomy_ we chose
-
 function tc_ctf_convert_taxonomy_id_to_slug( $query ) {
     global $pagenow;
 

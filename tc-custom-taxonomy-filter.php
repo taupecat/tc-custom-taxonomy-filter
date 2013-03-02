@@ -9,7 +9,7 @@ License: GPLv2
 */
 
 // Only run this on the admin side of the world
-if ( is_admin ) {
+if ( is_admin() ) {
     add_action( 'restrict_manage_posts', 'tc_ctf_restrict_manage_posts' );
     add_filter( 'parse_query', 'tc_ctf_convert_taxonomy_id_to_slug' );
 }

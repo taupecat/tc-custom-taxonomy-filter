@@ -2,7 +2,7 @@
 Contributors: taupecat
 Requires at least: 3.4
 Tested up to: 3.4.2
-Stable tag: 1.1
+Stable tag: 1.2
 Tags: custom-taxonomy, filter
 
 Filter your posts by your custom taxonomies.
@@ -18,6 +18,10 @@ Filter your posts (including custom post types) by your custom taxonomies, just 
 3. There is no step 3!
 
 == Changelog ==
+
+= Version 1.2 =
+
+* Fixed a small bug where is_admin() wasn't being called as a proper function.
 
 = Version 1.1 =
 

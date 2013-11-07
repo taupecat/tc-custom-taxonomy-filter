@@ -24,7 +24,12 @@ function tc_ctf_restrict_manage_posts() {
     foreach( $filters as $tax_slug ) {
 
         $taxonomy = get_taxonomy( $tax_slug );
-        $term = get_term_by( 'slug', $wp_query->query_vars[$tax_slug], $taxonomy->name );
+
+        $value = array_key_exists($tax_slug, $wp_query->query_vars) ? $wp_query->query_vars[$tax_slug] : '';
+
+        $term = get_term_by( 'slug', $value, $taxonomy->name );
+
+        $term_id = $term ? $term->term_id : '';
 
         wp_dropdown_categories(
             array(
@@ -64,7 +69,9 @@ function tc_ctf_convert_taxonomy_id_to_slug( $query ) {
     // loop through each of the requested taxonomies
     if ( $pagenow == 'edit.php' ) {
         foreach ( $tax_queries as $tax_query ) {
-            $query_vars[$tax_query['taxonomy']] = get_term_by( 'id', $tax_query['terms'][0], $tax_query['taxonomy'] )->slug;
+            $term = get_term_by( 'id', $tax_query['terms'][0], $tax_query['taxonomy'] );
+            $slug = $term ? $term->slug : '';
+            $query_vars[$tax_query['taxonomy']] = $slug;
         }
     }
 }

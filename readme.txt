@@ -1,8 +1,8 @@
 === TC Custom Taxonomy Filter ===
-Contributors: taupecat
+Contributors: taupecat, tatumcreative, mrwweb
 Requires at least: 3.4
-Tested up to: 3.4.2
-Stable tag: 1.2
+Tested up to: 3.7.1
+Stable tag: 1.3
 Tags: custom-taxonomy, filter
 
 Filter your posts by your custom taxonomies.
@@ -18,6 +18,10 @@ Filter your posts (including custom post types) by your custom taxonomies, just 
 3. There is no step 3!
 
 == Changelog ==
+
+= Version 1.3 =
+
+* Bug fix to remove PHP notices. Props tatumcreative, mrwweb.
 
 = Version 1.2 =
 

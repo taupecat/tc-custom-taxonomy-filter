@@ -1,9 +1,9 @@
 # TC Custom Taxonomy Filter
 
-* Contributors: taupecat
+* Contributors: taupecat, tatumcreative, mrwweb
 * Requires at least: 3.4
-* Tested up to: 3.4.2
-* Stable tag: 1.1
+* Tested up to: 3.7.1
+* Stable tag: 1.3
 * Tags: custom-taxonomy, filter
 
 A WordPress plugin to filter your posts by custom taxonomies in the dashboard.
@@ -19,6 +19,14 @@ Filter your posts (including custom post types) by your custom taxonomies, just 
 3. There is no step 3!
 
 ## Changelog
+
+### Version 1.3
+
+* Bug fix to remove PHP notices. Props tatumcreative, mrwweb.
+
+### Version 1.2
+
+* Fixed a small bug where is_admin() wasn't being called as a proper function.
 
 ### Version 1.1
 

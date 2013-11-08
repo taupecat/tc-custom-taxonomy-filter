@@ -39,7 +39,7 @@ function tc_ctf_restrict_manage_posts() {
                 'hide_empty'        => false,
                 'orderby'           => 'name',
                 'order'             => 'ASC',
-                'selected'          => $term->term_id
+                'selected'          => $term_id
             )
         );
     }

@@ -46,17 +46,16 @@ function tc_ctf_restrict_manage_posts() {
 }
 
 // Get only the custom taxonomies associated with this post type
+function tc_ctf_exclude_builtin($tax){
+    return $tax->_builtin == false;
+}
+
+// Get only the custom taxonomies associated with this post type
 function tc_ctf_get_filters() {
     global $typenow;
 
-    $args = array(
-        'object_type'   => array( $typenow ),
-        '_builtin'      => false
-    );
-
-    $taxonomies = get_taxonomies( $args );
-
-    return $taxonomies;
+    $taxonomies = get_object_taxonomies($typenow, 'objects' );
+    return array_keys(array_filter($taxonomies, 'tc_ctf_exclude_builtin'));
 }
 
 // Now, actually filter out the posts based on the category, er, _custom taxonomy_ we chose

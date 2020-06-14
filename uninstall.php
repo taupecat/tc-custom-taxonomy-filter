@@ -1,7 +1,3 @@
 <?php
-
-/*
- * No uninstall operations required.
- */
-
-?>
+// phpcs:ignoreFile
+// No uninstall operations required.

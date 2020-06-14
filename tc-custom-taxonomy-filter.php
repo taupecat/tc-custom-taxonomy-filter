@@ -3,7 +3,7 @@
  * Plugin Name: TC Custom Taxonomy Filter
  * Description: Filter your posts (including custom post types) by your custom taxonomies, just like you can with WordPress' native category filter.
  * Author: Tracy Rotton, TatumCreative, MRW Web Design
- * Version: 1.3.1
+ * Version: 2.0.0
  * Author URI: http://www.taupecat.com/
  * License: MIT
  * Requires at least: 3.4

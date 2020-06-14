@@ -23,7 +23,7 @@ Filter your posts (including custom post types) by your custom taxonomies, just 
 = Version 2.0.0 =
 
 * Rewrote code to modern WordPress standards.
-* Added column for custom taxonomy.
+* Changed license to MIT.
 
 = Version 1.3.1 =
 
